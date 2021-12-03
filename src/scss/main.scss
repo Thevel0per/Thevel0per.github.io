@@ -1,12 +1,60 @@
 @import "~normalize.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 @import "_variables";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: $background;
+  color: $main-text;
   display: flex;
+  font-family: 'Rubik', sans-serif;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.portfolio {
+  box-sizing: border-box;
+  padding: 16px;
+  @media screen and (min-width: 769px) {
+    width: 1080px;
+  }
+}
+
+.about {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    grid-area: header;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__image-container {
+    grid-area: image;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 250px;
+  }
+
+  &__text {
+    grid-area: about;
+    text-align: justify;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-areas: "header header"
+                       "image about";
+    grid-template-columns: 250px 1fr;
+  }
 }
