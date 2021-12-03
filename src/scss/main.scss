@@ -80,7 +80,8 @@ body {
     background: #F5F5F5;
     text-align: center;
     border-radius: 8px;
-    padding: 8px;
+    padding: 12px;
+    appearance: none;
   }
 
   &__well-known {
@@ -89,6 +90,38 @@ body {
     padding: 0 16px;
     box-sizing: border-box;
     width: 100%;
+  }
+
+  &__tab-picker {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .8);
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  &__tab-label {
+    text-align: center;
+    padding: 12px;
+    transition: background-color ease-in-out .3s, color ease-in-out .3s;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &--selected {
+      background-color: #F5F5F5;
+      color: $main-text;
+    }
+
+    &:hover {
+      background-color: #F5F5F5;
+      color: $main-text;
+    }
+  }
+
+  &__tab-radio {
+    visibility: hidden;
   }
 }
 
