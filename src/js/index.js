@@ -3,6 +3,11 @@ import "../scss/main.scss";
 const skillLabels = document.querySelectorAll(".skills__tab-label--js");
 const skillLists = document.querySelectorAll(".skills__list--js");
 const skillListSelect = document.querySelector(".skills__select--js");
+const helloAnimation = document.querySelector(".hello--js");
+
+setTimeout(() => {
+  helloAnimation.remove();
+}, 2000)
 
 const toggleListPicker = (picker) => {
   skillLabels.forEach((label) => {
