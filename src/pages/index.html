@@ -46,9 +46,9 @@
       <section class="skills">
         <header class="skills__header">My Skills</header>
         <fieldset class="skills__tab-picker">
-          <label class="skills__tab-label skills__tab-label--selected" for="well-known-skills">Well Known<input class="skills__tab-radio" type="radio" name="skills" id="well-known-skills"></label>
-          <label class="skills__tab-label" for="some-knowledge-skills">Some Knowledge<input class="skills__tab-radio" type="radio" name="skills" id="some-knowledge-skills"></label>
-          <label class="skills__tab-label" for="soft-skills">Soft Skills<input class="skills__tab-radio" type="radio" name="skills" id="soft-skills"></label>
+          <label class="skills__tab-label skills__tab-label--js skills__tab-label--selected" for="well-known">Well Known<input class="skills__tab-radio" type="radio" name="skills" id="well-known"></label>
+          <label class="skills__tab-label skills__tab-label--js" for="some-knowledge">Some Knowledge<input class="skills__tab-radio" type="radio" name="skills" id="some-knowledge"></label>
+          <label class="skills__tab-label skills__tab-label--js" for="soft-skills">Soft Skills<input class="skills__tab-radio" type="radio" name="skills" id="soft-skills"></label>
         </fieldset>
 
         <select class="skills__select skills__select--js">
@@ -56,7 +56,7 @@
           <option>Some Knowledge</option>
           <option>Soft Skills</option>
         </select>
-        <ul class="skills__well-known skills__well-known--js">
+        <ul class="skills__list skills__list--js" id="well-known-list--js">
           <li class="skill">
             <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
             <p class="skill__name">Ruby</p>
@@ -81,7 +81,61 @@
             <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
             <p class="skill__name">HTML</p>
           </li>
-        </div>
+        </ul>
+
+        <ul class="skills__list skills__list--js skills__list--hidden" id="some-knowledge-list--js">
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">RectJS</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Redis</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Kubernetes</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">RabbitMQ</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Azure Storage</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Git</p>
+          </li>
+        </ul>
+
+        <ul class="skills__list skills__list--js skills__list--hidden" id="soft-skills-list--js">
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Team player</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Can-do attitude</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Self-learning</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Persistance</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">Good communication</p>
+          </li>
+          <li class="skill">
+            <img src="../assets/img/check-mark.svg" alt="yellow check mark inside of a star" class="skill__check">
+            <p class="skill__name">English (C1)</p>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
