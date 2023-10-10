@@ -12,7 +12,6 @@
       property="og:description"
       content="I'm a Ruby on Rails developer. Check out my portfolio!"
     />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
     <meta property="og:url" content="https://thevel0per.github.io/" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="" />
@@ -42,15 +41,15 @@
           My name is Kuba Nowak and I’m a full stack Ruby developer. I
           specialize in Ruby on Rails framework, but I can use a bunch of
           different technologies. At work I do my best do deliver a cleanly
-          structured and maintable code and I really enjoy thingink whatever I
-          try to create through so that I can apply the best possible solution
+          structured and maintainable code and I really enjoy challenging myself to
+          figure problems out so that I can apply the best possible solution
           for the problem. As I don’t have much professional experience yet I
           always try to make at least some small progress each day working on my
           programming toolbox. That is why even after work I often do some more
           coding. I also enjoy doing other things like: music production,
-          learning languages, watching tv series or playing baseball. My goal is
-          to become a really good professional and make my knowledge and skills
-          as useful as possible to deliver neat and well-thought-out code.
+          learning languages, watching tv series or playing competitive video games.
+          My goal is to one day become a software architect and make my knowledge and skills
+          as useful as possible to deliver neat and well-thought-out software.
         </p>
       </section>
       <section class="skills">
@@ -63,7 +62,7 @@
               skills__tab-label--selected
             "
             for="well-known"
-            >Well Known<input
+            >Core Skills<input
               class="skills__tab-radio"
               type="radio"
               name="skills"
@@ -72,7 +71,7 @@
           <label
             class="skills__tab-label skills__tab-label--js"
             for="some-knowledge"
-            >Some Knowledge<input
+            >Some experience<input
               class="skills__tab-radio"
               type="radio"
               name="skills"
@@ -90,8 +89,8 @@
         </fieldset>
 
         <select class="skills__select skills__select--js">
-          <option value="well-known">Well Known</option>
-          <option value="some-knowledge">Some Knowledge</option>
+          <option value="well-known">Core Skills</option>
+          <option value="some-knowledge">Some experience</option>
           <option value="soft-skills">Soft Skills</option>
         </select>
         <ul class="skills__list skills__list--js" id="well-known-list--js">
@@ -143,6 +142,14 @@
             />
             <p class="skill__name">HTML</p>
           </li>
+          <li class="skill">
+            <img
+                    src="../assets/img/check-mark.svg"
+                    alt="yellow check mark inside of a star"
+                    class="skill__check"
+            />
+            <p class="skill__name">Git</p>
+          </li>
         </ul>
 
         <ul
@@ -155,7 +162,7 @@
               alt="yellow check mark inside of a star"
               class="skill__check"
             />
-            <p class="skill__name">RectJS</p>
+            <p class="skill__name">ReactJS</p>
           </li>
           <li class="skill">
             <img
@@ -191,11 +198,27 @@
           </li>
           <li class="skill">
             <img
-              src="../assets/img/check-mark.svg"
-              alt="yellow check mark inside of a star"
-              class="skill__check"
+                    src="../assets/img/check-mark.svg"
+                    alt="yellow check mark inside of a star"
+                    class="skill__check"
             />
-            <p class="skill__name">Git</p>
+            <p class="skill__name">AWS</p>
+          </li>
+          <li class="skill">
+            <img
+                    src="../assets/img/check-mark.svg"
+                    alt="yellow check mark inside of a star"
+                    class="skill__check"
+            />
+            <p class="skill__name">Docker</p>
+          </li>
+          <li class="skill">
+            <img
+                    src="../assets/img/check-mark.svg"
+                    alt="yellow check mark inside of a star"
+                    class="skill__check"
+            />
+            <p class="skill__name">CircleCI</p>
           </li>
         </ul>
 
@@ -254,7 +277,7 @@
         </ul>
       </section>
       <section class="projects">
-        <header class="projects__header">My Projects</header>
+        <header class="projects__header">My Professional Experience</header>
         <ul class="projects__list">
           <li class="project">
             <img
@@ -262,9 +285,14 @@
               alt="ShelfWise company logo"
               class="project__image"
             />
-            <p class="project__title">1. ShelfWise Web Services</p>
+            <p class="project__title">1. ShelfWise - ShelfWise Web Services</p>
             <p class="project__description">
-              At ShelfWise I was responsible for developing all web services and
+              <span class="project__timeframe">
+                <em>Jan 2020 - Dec 2021</em>
+              </span>
+
+              At <a href="https://get.form.com/shelfwise" target="_blank">ShelfWise</a>
+              I was responsible for developing all web services and
               maintaining architecture. All the services were developed using
               Ruby on Rails and some single ReactJS components. Main service I
               developed was a web platform which was used to present client data
@@ -275,11 +303,44 @@
               coming from machine learning services. For communication with ML
               services it used RabbitMQ handled by Bunny and Sneakers gems. I
               was working on all of these features as well as importing data to
-              the system through a CSV files and some other stuff. I'd say this
-              project was 70% backend, 30% frontend and I've worked on both. In
+              the system through a CSV files and some other stuff. This
+              project was roughly 70% backend, 30% frontend and I've worked on both. In
               addition to that I've also done some minor works on service that
               was handling client data injections and I've handled few
               Kubernetes deployments and other resources.
+
+              <span class="project__techstack">
+                <strong>Techstack:</strong> Ruby + RoR, ReactJS, Redis, Sidekiq, Azure Storage, RabbitMQ, Docker, Bitbucket (Repos + CI/CD), Kubernetes
+              </span>
+            </p>
+          </li>
+          <li class="project">
+            <img
+                    src="../assets/img/sperasoft-logo.png"
+                    alt="ShelfWise company logo"
+                    class="project__image"
+            />
+            <p class="project__title">2. Sperasoft - Scandinavian Lottery Games</p>
+            <p class="project__description">
+              <span class="project__timeframe">
+                <em>Jan 2022 - Present</em>
+              </span>
+
+              I was hired to <a href="https://sperasoft.com/" target="_blank">Sperasoft</a> to
+              be a part of the team that was responsible for live-ops and development of the
+              lottery games applications for a scandinavian client. I was the first Ruby developer
+              to join the team then 2 other colleagues joined me. Our main focus was on maintenance and live-ops of
+              few different applications, all of which were developed using Ruby on Rails. We also developed new features
+              from time to time, one of the biggest ones was a complete rewrite of the reporting system for all of
+              the applications. We were working closely with other teams (dev-ops, FE engineer, QA, level 1 support) to fix issues
+              with applications and make sure they work properly. There was also a lot of close communication with the client
+              to make sure we focus on the most crucial issues first. At first I was working on both frontend and backend of
+              the applications but then a frontend engineer joined us and he was handling most of the frontend work so me and
+              other Ruby devs mostly focused on backend after that. We worked with standard agile flow using Jira and Confluence.
+
+              <span class="project__techstack">
+                <strong>Techstack:</strong> Ruby + RoR, ReactJS, Redis, Sidekiq, AWS, NodeJS, Docker, GitHub, CircleCI
+              </span>
             </p>
           </li>
         </ul>
